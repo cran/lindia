@@ -1,7 +1,7 @@
 Package: lindia
 Type: Package
 Title: Automated Linear Regression Diagnostic
-Version: 0.9
+Version: 0.10
 Authors@R: c(person("Yeuk Yu", "Lee", 
     email = "lyeukyu@gmail.com", 
     role = c("aut", "cre")),
@@ -19,15 +19,14 @@ Description: Provides a set of streamlined functions that allow
 Depends: R (>= 3.2.2)
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 7.2.3
 Imports: MASS, ggplot2, gridExtra
 URL: https://github.com/yeukyul/lindia
 BugReports: https://github.com/yeukyul/lindia/issues
 NeedsCompilation: no
-Packaged: 2017-05-10 02:16:28 UTC; edwardlee
+Packaged: 2023-08-10 22:22:59 UTC; tlee
 Author: Yeuk Yu Lee [aut, cre],
   Samuel Ventura [aut]
 Maintainer: Yeuk Yu Lee <lyeukyu@gmail.com>
 Repository: CRAN
-Date/Publication: 2017-05-10 02:29:20 UTC
+Date/Publication: 2023-08-10 22:40:02 UTC

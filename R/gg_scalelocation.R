@@ -3,7 +3,7 @@
 #'
 #' @param fitted.lm a fitted linear model (i.e. lm, glm) that contains fitted regression
 #' @param method smoothing method of fitted line on scale-location plot.
-#'          eg. "lm", "glm", "gam", "loess", "rlm". See \url{http://docs.ggplot2.org/current/geom_smooth.html}
+#'          eg. "lm", "glm", "gam", "loess", "rlm". See \url{https://ggplot2.tidyverse.org/reference/geom_smooth.html}
 #'          for more details.
 #' @param se logical; determines whether se belt should be plotted on plot
 #' @param scale.factor numeric; scales the point size and linewidth to allow customized viewing. Defaults to 1.
@@ -28,5 +28,5 @@ gg_scalelocation <- function(fitted.lm, method = 'loess', scale.factor = 1, se =
               geom_point(size = scale.factor) +
               geom_smooth(method = method, se = se, size = scale.factor, color = "indianred3") +
               ggtitle("Scale-Location Plot") +
-              labs(x="Sqrt(Standardized Residuals)", y = "Fitted Values"))
+              labs(x="Fitted Values", y = "Sqrt (Standardized Residuals)"))
 }
